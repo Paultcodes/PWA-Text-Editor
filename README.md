@@ -22,6 +22,16 @@ JATE is built using the following technologies:
 To run JATE locally, follow the steps given below:
 
 1. `git clone https://github.com/<your-username>/jate.git`
+2. `cd jate`
+3. `npm install`
+4. `npm start`
+5. Open the app in your browser by visiting the URL `http://localhost:3000`
+
+## Demo 
+Here is a picture and link to the deployed application 
+https://limitless-sea-11692.herokuapp.com/
+![jate](https://user-images.githubusercontent.com/111453328/217366721-9d2ba5fb-76d1-4d77-bb45-2006137e9352.jpg)
+
 
 
 
