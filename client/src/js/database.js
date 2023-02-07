@@ -1,5 +1,9 @@
 import { openDB } from 'idb';
 
+
+//Defines a function initdb that asynchronously initializes an IndexedDB database named jate. 
+//The function opens the database and checks if an object store named jate already exists. If it exists, it logs a message indicating that the database already exists. 
+//If not, it creates an object store with a key path of id and auto incrementing keys and logs a message indicating that the database has been created.
 const initdb = async () =>
   openDB('jate', 1, {
     upgrade(db) {
@@ -12,7 +16,10 @@ const initdb = async () =>
     },
   });
 
-// TODO: Add logic to a method that accepts some content and adds it to the database
+
+//Exports a function to write data to an IndexedDB database asynchronously. 
+//Logs messages, opens database connection, starts transaction, 
+//accesses store, puts object with id and value and logs result of request.
 export const putDb = async (content) => {
   console.log('Post To The Database...');
 
@@ -28,7 +35,10 @@ export const putDb = async (content) => {
   console.log('Data added to the database....', result);
 };
 
-// TODO: Add logic for a method that gets all the content from the database
+
+//Exports a function to read data from an IndexedDB database asynchronously. Logs message, 
+//opens database connection, starts read-only transaction, 
+//accesses store, retrieves all data, logs result, and returns value
 export const getDb = async () => {
   console.log('GET from the database');
 
