@@ -21,6 +21,8 @@ JATE is built using the following technologies:
 ## Installation
 To run JATE locally, follow the steps given below:
 
+1. `git clone https://github.com/<your-username>/jate.git`
+
 
 
 
